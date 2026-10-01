@@ -1,0 +1,17 @@
+{
+  "name": "agenthq",
+  "version": "0.1.0",
+  "description": "Portable project memory and guardrails for a Paperclip-managed AI development team.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "validate": "node src/cli.mjs validate",
+    "context": "node src/cli.mjs context",
+    "test": "node --test",
+    "check": "npm run validate && npm test && npm run context"
+  }
+}
+
