@@ -9,8 +9,8 @@ decisions, tasks, or working rules.
 
 ## Current status
 
-Foundation milestone. Nothing is connected to a paid API, personal account, or
-production system yet.
+The local foundation is working and tested. Nothing is connected to a paid API,
+personal account, or production system yet.
 
 ## Initial team
 
@@ -69,4 +69,12 @@ not committed because it can be rebuilt from the source documents.
 3. Run Lead, Builder, and QA sequentially on AgentHQ itself.
 4. Add GitHub pull-request evidence.
 5. Only then connect another real project.
+
+## Verification
+
+The current foundation has automated tests for valid configuration, unsafe
+approval bypass, shared personal accounts, extra agents, automatic merge access,
+credential-shaped fields, context generation, and missing project memory.
+
+GitHub runs the same checks on Windows and Linux for every push and pull request.
 

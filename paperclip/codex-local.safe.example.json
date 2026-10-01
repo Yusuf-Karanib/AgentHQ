@@ -1,0 +1,14 @@
+{
+  "adapterType": "codex_local",
+  "adapterConfig": {
+    "cwd": "REPLACE_WITH_ABSOLUTE_AGENTHQ_PATH",
+    "engine": "auto",
+    "instructionsFilePath": "REPLACE_WITH_ABSOLUTE_AGENTHQ_PATH/.agenthq/context-pack.md",
+    "search": false,
+    "dangerouslyBypassApprovalsAndSandbox": false,
+    "timeoutSec": 300,
+    "graceSec": 15,
+    "outputInactivityTimeoutMs": 420000
+  }
+}
+

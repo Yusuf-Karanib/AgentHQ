@@ -5,7 +5,7 @@
 ### AHQ-001 — Define the operating model
 
 **Owner:** Yusuf with Codex  
-**Status:** In progress
+**Status:** Completed
 
 Acceptance checks:
 
@@ -17,7 +17,7 @@ Acceptance checks:
 ### AHQ-002 — Build configuration validation
 
 **Owner:** Builder  
-**Status:** Planned
+**Status:** Completed
 
 Acceptance checks:
 
@@ -28,7 +28,7 @@ Acceptance checks:
 ### AHQ-003 — Build the portable context pack
 
 **Owner:** Builder  
-**Status:** Planned
+**Status:** Completed
 
 Acceptance checks:
 
@@ -39,7 +39,7 @@ Acceptance checks:
 ### AHQ-004 — Add Paperclip safely
 
 **Owner:** Yusuf  
-**Status:** Blocked until local foundation passes
+**Status:** Blocked until a supported authentication choice is approved
 
 Acceptance checks:
 
@@ -47,4 +47,15 @@ Acceptance checks:
 - Safety bypass is disabled.
 - Only Yusuf's supported authentication is connected.
 - Environment test passes before any real heartbeat.
+
+### AHQ-005 — Add continuous verification
+
+**Owner:** Builder  
+**Status:** Completed
+
+Acceptance checks:
+
+- Every push and pull request runs the complete check.
+- Checks run on Windows and Linux.
+- The workflow receives read-only repository permission.
 
