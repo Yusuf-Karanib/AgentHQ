@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "workspace": {
+    "id": "agenthq",
+    "name": "AgentHQ",
+    "goal": "Create a permanent, portable AI development workspace that keeps project knowledge while workers can be replaced.",
+    "firstProject": "agenthq"
+  },
+  "paperclip": {
+    "pinnedRelease": "v2026.916.1",
+    "verifiedOn": "2026-10-01",
+    "adapter": "codex_local",
+    "executionMode": "sequential",
+    "dangerouslyBypassApprovalsAndSandbox": false
+  },
+  "limits": {
+    "maxAgents": 3,
+    "maxConcurrentTasks": 1,
+    "maxRunsPerTask": 3,
+    "newPaidSpendUsd": 0
+  },
+  "approvals": {
+    "requireHumanMerge": true,
+    "requireHumanDeploy": true,
+    "requireHumanBudgetChange": true,
+    "requireHumanNewConnection": true
+  },
+  "connections": {
+    "allowSharedPersonalAccounts": false,
+    "allowProductionCredentials": false,
+    "allowedDuringPilot": [
+      "owner_codex_subscription"
+    ],
+    "blockedDuringPilot": [
+      "email",
+      "calendar",
+      "slack",
+      "telegram",
+      "production_cloud"
+    ]
+  },
+  "agents": [
+    {
+      "id": "lead",
+      "name": "Lead",
+      "roleFile": "agents/lead.md",
+      "canDelegate": true,
+      "canEditCode": false,
+      "canRunTests": false,
+      "canMerge": false,
+      "canDeploy": false
+    },
+    {
+      "id": "builder",
+      "name": "Builder",
+      "roleFile": "agents/builder.md",
+      "manager": "lead",
+      "canDelegate": false,
+      "canEditCode": true,
+      "canRunTests": true,
+      "canMerge": false,
+      "canDeploy": false
+    },
+    {
+      "id": "qa",
+      "name": "QA",
+      "roleFile": "agents/qa.md",
+      "manager": "lead",
+      "canDelegate": false,
+      "canEditCode": false,
+      "canRunTests": true,
+      "canMerge": false,
+      "canDeploy": false
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+node_modules/
+.agenthq/
+.env
+.env.*
+!.env.example
+coverage/
+*.log
+
